@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Browse Past Questions | CollegePast</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            College<span>Past</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="browse.html" class="active">
+                Browse
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="small-title">
+            COLLEGEPAST
+        </span>
+
+        <h1>
+            Browse Past Questions
+        </h1>
+
+        <p>
+            Select your academic information to find
+            available past questions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="browse-section">
+
+<div class="container">
+
+<div class="filter-card">
+
+
+    <!-- LEVEL -->
+
+    <div class="filter-group">
+
+        <label for="level">
+            1. Select Level
+        </label>
+
+        <select id="level">
+
+            <option value="">
+                Select Level
+            </option>
+
+            <option value="100">
+                Level 100
+            </option>
+
+            <option value="200">
+                Level 200
+            </option>
+
+            <option value="300">
+                Level 300
+            </option>
+
+            <option value="400">
+                Level 400
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- PROGRAMME -->
+
+    <div
+        class="filter-group hidden"
+        id="programmeGroup"
+    >
+
+        <label for="programme">
+            2. Select Programme
+        </label>
+
+        <select id="programme">
+
+            <option value="">
+                Select Programme
+            </option>
+
+            <option value="upper-primary">
+                Upper Primary
+            </option>
+
+            <option value="jhs">
+                JHS
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- SPECIALISM -->
+
+    <div
+        class="filter-group hidden"
+        id="specialismGroup"
+    >
+
+        <label for="specialism">
+            3. Select Specialism
+        </label>
+
+        <select id="specialism">
+
+            <option value="">
+                Select Specialism
+            </option>
+
+            <option value="mathematics">
+                Mathematics
+            </option>
+
+            <option value="ict">
+                ICT
+            </option>
+
+            <option value="social-studies">
+                Social Studies
+            </option>
+
+            <option value="history">
+                History
+            </option>
+
+            <option value="rme">
+                RME
+            </option>
+
+            <option value="science">
+                Science
+            </option>
+
+            <option value="technical">
+                Technical
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- SEMESTER -->
+
+    <div class="filter-group hidden" id="semesterGroup">
+
+        <label for="semester">
+            4. Select Semester
+        </label>
+
+        <select id="semester">
+
+            <option value="">
+                Select Semester
+            </option>
+
+            <option value="first">
+                First Semester
+            </option>
+
+            <option value="second">
+                Second Semester
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- COURSE -->
+
+    <div class="filter-group hidden" id="courseGroup">
+
+        <label for="course">
+            5. Select Course
+        </label>
+
+        <select id="course">
+
+            <option value="">
+                Select Course
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <button
+        id="findQuestions"
+        class="btn primary find-btn"
+        disabled
+    >
+        Find Past Questions
+    </button>
+
+
+</div>
+
+<!-- RESULTS -->
+
+<div id="results" class="results">
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 CollegePast. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
